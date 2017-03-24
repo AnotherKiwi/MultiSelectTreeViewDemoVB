@@ -1,6 +1,6 @@
 ﻿Imports System.Reflection
 
-Namespace ViewModel
+Namespace ViewModels
     <Obfuscation(Exclude:=True, ApplyToMembers:=False, Feature:="renaming")>
     Public Class ColorItemViewModel
         Inherits TreeItemViewModel

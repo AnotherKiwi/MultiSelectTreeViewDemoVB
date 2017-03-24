@@ -3,7 +3,7 @@ Imports System.ComponentModel
 Imports System.Collections.ObjectModel
 Imports System.Runtime.CompilerServices
 
-Namespace ViewModel
+Namespace ViewModels
     ''' <summary>
     ''' Sample base class for tree items view models. All specialised tree item view model classes
     ''' should inherit from this class.

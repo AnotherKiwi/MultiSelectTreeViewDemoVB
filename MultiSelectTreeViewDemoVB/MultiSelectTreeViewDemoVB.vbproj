@@ -71,8 +71,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Helpers\TypeTemplateSelector.vb" />
-    <Compile Include="ViewModel\ColorItemViewModel.vb" />
-    <Compile Include="ViewModel\TreeItemViewModel.vb" />
+    <Compile Include="ViewModels\ColorItemViewModel.vb" />
+    <Compile Include="ViewModels\MainWindowViewModel.vb" />
+    <Compile Include="ViewModels\TreeItemViewModel.vb" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

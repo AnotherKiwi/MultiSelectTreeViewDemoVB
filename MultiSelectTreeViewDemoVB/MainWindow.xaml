@@ -5,7 +5,7 @@
 	xmlns:Controls="clr-namespace:System.Windows.Controls;assembly=MultiSelectTreeView" 
 	xmlns:demo="clr-namespace:MultiSelectTreeViewDemoVB"
 	xmlns:helpers="clr-namespace:MultiSelectTreeViewDemoVB.Helpers"
-	xmlns:vm="clr-namespace:MultiSelectTreeViewDemoVB.ViewModel"
+	xmlns:vm="clr-namespace:MultiSelectTreeViewDemoVB.ViewModels"
 	xmlns:sys="clr-namespace:System;assembly=mscorlib"
 	TextOptions.TextFormattingMode="Display"
 	UseLayoutRounding="True"
@@ -15,6 +15,7 @@
 	Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
 	ResizeMode="CanResizeWithGrip">
 
+    
     <Window.Resources>
         <!--
 		Here the normal editor template is defined
@@ -91,7 +92,7 @@
             <TextBlock DockPanel.Dock="Top" Style="{StaticResource FirstCaption}">The TreeView control</TextBlock>
             <Controls:MultiSelectTreeView
 				Name="TheTreeView"
-				ItemsSource="{Binding Children}"
+				ItemsSource="{Binding RootNode.Children}"
 				PreviewSelectionChanged="TheTreeView_PreviewSelectionChanged">
 
                 <Controls:MultiSelectTreeView.ContextMenu>
@@ -298,7 +299,7 @@
             </TextBlock>
             <Controls:MultiSelectTreeView
 				Name="TheTreeView2"
-				ItemsSource="{Binding Children}">
+				ItemsSource="{Binding RootNode.Children}">
 
                 <Controls:MultiSelectTreeView.ItemContainerStyle>
                     <Style TargetType="{x:Type Controls:MultiSelectTreeViewItem}">
