@@ -1,6 +1,9 @@
-﻿Namespace ViewModels
+﻿Imports Catel.MVVM
+
+Namespace ViewModels
 
     Public Class MainWindowViewModel
+        Inherits ViewModelBase
 
         Public Sub New()
             ' Create some example nodes to play with
@@ -36,12 +39,12 @@
             node14.Children.Add(colorNode3)
             node1.Children.Add(node15)
 
-            Me.RootNode = rootNode
-
             ' Preset some node states
             node1.IsSelected = True
             node13.IsSelected = True
             node14.IsExpanded = True
+
+            Me.RootNode = rootNode
 
         End Sub
 
