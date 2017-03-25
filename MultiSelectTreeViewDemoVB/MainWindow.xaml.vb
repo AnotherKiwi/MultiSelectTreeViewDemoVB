@@ -104,7 +104,7 @@ Partial Public Class MainWindow
     End Sub
 
     Private Sub ClearChildrenButton_Click(sender As Object, e As System.Windows.RoutedEventArgs)
-        Dim selection As Object() = New Object(TheTreeView.SelectedItems.Count) {}
+        Dim selection As Object() = New Object(TheTreeView.SelectedItems.Count - 1) {}
         TheTreeView.SelectedItems.CopyTo(selection, 0)
         For Each node As TreeItemViewModel In selection
             If node.Children IsNot Nothing Then
